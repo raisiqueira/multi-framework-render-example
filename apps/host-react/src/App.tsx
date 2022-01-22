@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Navbar from "./components/Navbar";
 import "./index.css";
 
-import AwesomeButton from "remote_react/AwesomeButton";
+import Counter from "remote_react/Counter";
 import counterWrapped from "remote_solid/counterWrapped";
 
 const App = () => {
@@ -13,14 +14,15 @@ const App = () => {
   }, []);
 
   return (
-    <div className="mt-10 text-3xl mx-auto max-w-6xl">
-      <div className="text-3xl font-bold text-blue-700">Name: test-host</div>
-      <div>Framework: react</div>
-      <div>Language: TypeScript</div>
-      <div>CSS: Tailwind</div>
-      <div ref={solidRef} />
-      <AwesomeButton />
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <div className="container mx-auto mt-5">
+        <div className="flex gap-x-5">
+          <div ref={solidRef} />
+          <Counter />
+        </div>
+      </div>
+    </React.Fragment>
   );
 };
 ReactDOM.render(<App />, document.getElementById("app"));
