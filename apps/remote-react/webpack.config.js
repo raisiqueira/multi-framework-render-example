@@ -46,6 +46,7 @@ module.exports = {
       remotes: {},
       exposes: {
         "./AwesomeButton": "./src/components/AwesomeButton",
+        "./Counter": "./src/components/Counter",
       },
       shared: {
         ...deps,

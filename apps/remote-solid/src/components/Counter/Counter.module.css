@@ -1,0 +1,35 @@
+.counter__container {
+  @apply shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-800 w-64;
+}
+
+.button {
+  @apply py-2 px-5 bg-blue-800 text-white;
+}
+
+.buttons__container {
+  @apply flex items-center justify-between gap-4 w-full mt-8;
+}
+
+.p1 {
+  @apply w-full h-full text-center text-blue-400;
+}
+
+.p2 {
+  @apply flex h-full flex-col justify-between;
+}
+
+.title {
+  @apply text-gray-800 dark:text-gray-200 text-xl font-bold mt-4;
+}
+
+.button__increment {
+  @apply py-2 px-4 bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg;
+}
+
+.button__reset {
+  @apply py-2 px-4 bg-white hover:bg-gray-100 focus:ring-blue-500 focus:ring-offset-blue-200 text-blue-500 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg;
+}
+
+.description {
+  @apply text-gray-600 dark:text-gray-400 text-xs py-2 px-6;
+}

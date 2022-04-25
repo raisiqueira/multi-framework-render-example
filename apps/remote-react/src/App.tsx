@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import AwesomeButton from "./components/AwesomeButton";
+import Counter from "./components/Counter";
 
 import "./index.css";
 
@@ -11,6 +12,7 @@ const App = () => (
     <div>Language: TypeScript</div>
     <div>CSS: Tailwind</div>
     <AwesomeButton />
+    <Counter />
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));

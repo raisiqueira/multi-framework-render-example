@@ -1,5 +1,5 @@
 import { render } from "solid-js/web";
-import Couter from "./components/Couter";
+import Counter from "./components/Counter";
 import "./index.css";
 
 const App = () => (
@@ -8,7 +8,7 @@ const App = () => (
     <div>Framework: solid-js</div>
     <div>Language: TypeScript</div>
     <div>CSS: Tailwind</div>
-    <Couter />
+    <Counter />
   </div>
 );
 render(App, document.getElementById("app"));
