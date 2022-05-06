@@ -9,9 +9,9 @@ import counterWrapped from "remote_solid/counterWrapped";
 const App = () => {
   const solidRef = React.useRef(null);
 
-  React.useEffect(() => {
-    counterWrapped(solidRef.current);
-  }, []);
+  // React.useEffect(() => {
+  //   counterWrapped(solidRef.current);
+  // }, []);
 
   return (
     <React.Fragment>
